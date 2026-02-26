@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arusha National Park</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+
+    body {
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    .hero {
+        height: 320px;
+        background: url("img/walaru.jpg") center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .container {
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        gap: 40px;
+        padding: 40px 0;
+    }
+
+    .left {
+        flex: 3;
+    }
+
+    .right {
+        flex: 1;
+        background: #e8dccb;
+        padding: 70px;
+        border-radius: 6px;
+        height: fit-content;
+    }
+
+    .right h3 {
+        margin-bottom: 10px;
+    }
+
+    .right ul {
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    .slider {
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .slider img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .slider button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 50%;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #2f4f2f;
+    }
+
+    .video {
+        margin-top: 30px;
+    }
+</style>
+
+<body>
+
+    <section class="hero">
+        <h1>ARUSHA NATIONAL PARK</h1>
+    </section>
+
+    <div class="container">
+
+        <div class="left">
+
+            <p>
+                Arusha National Park is a small, charming park, located in the northeast of Tanzania. It is near the
+                city of Arusha and provides great views of the Mount Kilimanjaro. The park is a scenic and diverse park
+                which offers a wide range of animal and plant species. And it also has a rich diversity of landscapes.
+                From lakes, waterfalls and swamps to volcanos, mountains and tropical rainforest – the ideal reserve for
+                all kind of animals. The swamps, rainforest and lakes attract many beautiful birds, including
+                silvery-cheeked hornbill and thousands of pink-hued flamingos. This park is also the only place in
+                northern Tanzania where you can easily spot the black-and-white colobus monkey.
+            </p>
+
+            <div class="slider">
+                <button class="prev">&#10094;</button>
+                <img src="img/walaru.jpg" id="slide">
+                <button class="next">&#10095;</button>
+            </div>
+
+            <h2>Mount Meru</h2>
+            <p>
+                Mount Meru is located within Arusha National Park. This dormant volcano is Tanzania’s second-highest
+                mountain at a height of 4,566 meters (14,990 feet). It is a beautiful, but challenging mountain to
+                climb. The panorama views from the summit over the steppes of the park, Mount Kilimanjaro and the
+                Momella Lakes are spectacular. A day hike on Mount Meru gives you another perspective and offers a nice
+                change. We also organise climbs to the peak…
+            </p>
+
+            <h2>Canoeing or Walking Safari</h2>
+            <p>
+                One of the popular safari activities in Arusha national park is a canoe or walking safari with an armed
+                ranger. The Momella lakes in the northeast for example offer a large variety of animals. They are in an
+                open landscape and are home to hippos and all kinds of birds. Countless bucks and buffalo can be seen
+                near the lakes. A great change to enjoy wildlife up close, from a different perspective than sitting in
+                a safari vehicle. Absolutely a memorable safari experience!
+
+                Arusha town is about 45 minutes away from Arusha National Park, and Mount Kilimanjaro is about 50 km (31
+                miles) away.
+            </p>
+
+            <div class="video">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/8Wj9K9p7X8E">
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <h3>Information & Facts</h3>
+
+            <p>Known for the black and white colobus monkeys and Mount Meru.</p>
+
+            <h4>Common Animals</h4>
+            <ul>
+                <li>Buffalo</li>
+                <li>Giraffe</li>
+                <li>Zebra</li>
+                <li>Flamingos</li>
+                <li>Hippo</li>
+                <li>Warthog</li>
+            </ul>
+
+            <h4>Arusha Facts</h4>
+            <ul>
+                <li>Home to Mount Meru</li>
+                <li>Momella Lakes</li>
+                <li>Ngurdoto Crater</li>
+                <li>Rain forest landscapes</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script>
+        const images = [
+            "https://source.unsplash.com/900x500/?mount-meru",
+            "https://source.unsplash.com/900x500/?tanzania",
+            "https://source.unsplash.com/900x500/?safari"
+        ];
+
+        let index = 0;
+        const slide = document.getElementById("slide");
+
+        document.querySelector(".next").onclick = () => {
+            index++;
+            if (index >= images.length) index = 0;
+            slide.src = images[index];
+        }
+
+        document.querySelector(".prev").onclick = () => {
+            index--;
+            if (index < 0) index = images.length - 1;
+            slide.src = images[index];
+        }
+    </script>
+</body>
+
+</html>

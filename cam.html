@@ -16,7 +16,6 @@
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
     <i class="bi bi-caret-down-fill"></i>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
 
     <style>
@@ -3314,202 +3313,6 @@
                 opacity: 0;
             }
         }
-
-        .card-containerer {
-            text-align: right;
-            margin-top: 40px;
-            padding-right: 40px;
-        }
-
-        .small-card {
-            display: inline-block;
-            background-color: white;
-            color: #4b5f36;
-            padding: 10px 30px;
-            margin-left: 12px;
-            border-radius: 10px;
-            text-decoration: none;
-            border: 2px solid #4b5f36;
-            transition: 0.3s ease;
-        }
-
-        .small-card:hover {
-            background-color: #4b5f36;
-            color: white;
-        }
-
-        .main-text {
-            display: block;
-            font-size: 18px;
-        }
-
-        .sub-text {
-            display: block;
-            font-size: 12px;
-            letter-spacing: 2px;
-        }
-
-        .info-section {
-            width: 90%;
-            margin: 60px auto;
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .left-image {
-            flex: 1;
-        }
-
-        .left-image img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .right-text {
-            flex: 1;
-        }
-
-        .right-text h2 {
-            font-size: 36px;
-            margin-bottom: 15px;
-        }
-
-        .right-text p {
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-
-        .explore-link {
-            text-decoration: none;
-            background: #1b5e20;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f0f2f5;
-        }
-
-        #chat-icon {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 65px;
-            height: 65px;
-            background: #007bff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-            z-index: 9999;
-            transition: all 0.3s ease;
-        }
-
-        #chat-icon:hover {
-            transform: scale(1.1);
-            background: #0056b3;
-        }
-
-        #chat-container {
-            position: fixed;
-            bottom: 110px;
-            right: 30px;
-            width: 380px;
-            height: 400px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            display: none;
-            flex-direction: column;
-            overflow: hidden;
-            z-index: 9999;
-            border: 1px solid #ddd;
-        }
-
-        #chat-header {
-            background: #007bff;
-            color: white;
-            padding: 20px;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #close-btn {
-            cursor: pointer;
-            font-size: 24px;
-            line-height: 1;
-        }
-
-        #chat-box {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            background: #f9f9f9;
-        }
-
-        .message {
-            padding: 10px 15px;
-            border-radius: 15px;
-            max-width: 85%;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-        .user {
-            background: #007bff;
-            color: white;
-            align-self: flex-end;
-            border-bottom-right-radius: 2px;
-        }
-
-        .bot {
-            background: #e4e6eb;
-            color: #1c1e21;
-            align-self: flex-start;
-            border-bottom-left-radius: 2px;
-        }
-
-        #input-area {
-            display: flex;
-            padding: 15px;
-            background: white;
-            border-top: 1px solid #eee;
-        }
-
-        #user-input {
-            flex: 1;
-            border: 1px solid #ddd;
-            padding: 12px;
-            outline: none;
-            border-radius: 25px;
-            margin-right: 10px;
-        }
-
-        #send-btn {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 0 20px;
-            cursor: pointer;
-            border-radius: 25px;
-            font-weight: bold;
-        }
     </style>
 
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -3622,30 +3425,9 @@
 
 
         </div>
-        <!-- <a href="https://wa.me/255694424758?text=I'm%20interested%20in%20your%20service" class="whatsapp"><i
-                class="fa-brands fa-whatsapp"></i></a> -->
+        <a href="https://wa.me/255694424758?text=I'm%20interested%20in%20your%20service" class="whatsapp"><i
+                class="fa-brands fa-whatsapp"></i></a>
 
-        <!-- <div id="chat-icon">
-            <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            </svg>
-        </div>
-
-        <div id="chat-container">
-            <div id="chat-header">
-                <span>AI Support Agent</span>
-                <span id="close-btn">&times;</span>
-            </div>
-            <div id="chat-box">
-                <div class="message bot">Hello! How can I help you today?</div>
-            </div>
-            <div id="input-area">
-                <input type="text" id="user-input" placeholder="Type your message...">
-                <button id="send-btn">Send</button>
-            </div>
-        </div>
- -->
 
 
 
@@ -3673,7 +3455,7 @@
                         plains. It’s the ultimate African safari to view the Big Five in an untouched, dramatic
                         landscape.</p>
                     <div class="stars">★★★★★</div>
-                    <a href="explore.html" class="bten" style="width: 100px;">Explore</a>
+                    <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
             </div>
 
@@ -3684,20 +3466,18 @@
                     <p style="color:  black;">See huge herds of elephants and towering baobab trees. This beautiful,
                         less-crowded park offers a genuine safari experience, especially for bird lovers.</p>
                     <div class="stars">★★★★★</div>
-                    <a href="tara.html" class="bten" style="width: 100px;">Explore</a>
+                    <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
             </div>
 
-
-
             <div class="card">
-                <img src="bacck.jpg" alt="Place 1">
+                <img src="img.jpg" alt="Place 1">
                 <div class="card-content">
-                    <h3 class="h3-waf" style="color: #ff6600;">Mount Kilimanjaro</h3>
-                    <p style="color: black;">Discover Africa’s largest game reserve and a UNESCO World Heritage Site.
-                        Experience classic safaris, boat trips on the Rufiji River, and walking safaris.</p>
+                    <h3 class="h3-waf" style="color:#ff6600">Zanzibari(Unguja & pemba)</h3>
+                    <p style="color: black;">Explore historic Stone Town and relax on the white-sand beaches of Unguja.
+                        Find quiet luxury and world-class diving on the lush spice island of Pemba.</p>
                     <div class="stars">★★★★★</div>
-                    <a href="kilim.html" class="bten" style="width: 100px;">Explore</a>
+                    <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
             </div>
 
@@ -3708,87 +3488,69 @@
                     <p style="color: black;">Famous for its unique tree-climbing lions and huge flocks of flamingos
                         along the soda lake shore. It's a lush, compact park perfect for a diverse, exciting safari.</p>
                     <div class="stars">★★★★★</div>
-                    <a href="manyara.html" class="bten" style="width: 100px;">Explore</a>
+                    <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
             </div>
 
             <div class="card">
-                <img src="ngo4.jpg" alt="Place 1">
+                <img src="mafia.jpg" alt="Place 1">
                 <div class="card-content">
-                    <h3 class="h3-waf" style="color: #ff6600;">NGORONGOR CONVERSATION AREA</h3>
-                    <p style="color: black;">Welcome to Africa's Leading Tourist Attraction 2025: the Ngorongoro Crater.
-                        Besides the highest concentration
-                        of wildlife in Africa, including the Big Five and the entire cast of The Lion King, this
-                        one-of-a-kind
-                        scenery is also home to the famous Maasai tribe.</p>
+                    <h3 class="h3-waf" style="color: #ff6600;">Mafia Island</h3>
+                    <p style="color: black;">A paradise for divers and snorkelers. Visit this secluded marine park to
+                        swim with gentle whale sharks and explore vibrant, unspoiled coral reefs.</p>
                     <div class="stars">★★★★★</div>
-                    <a href="ngorongoro.html" class="bten" style="width: 100px;">Explore</a>
+                    <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
             </div>
-
-
 
             <div class="card">
-                <img src="mik.5.jpg" alt="Place 1">
+                <img src="lake.jpg" alt="Place 1">
                 <div class="card-content">
-                    <h3 class="h3-waf" style="color:#ff6600">MIKUMI NATIONAL PARK</h3>
-                    <p style="color: black;">Gemini said
-                        Mikumi National Park is Tanzania's fourth largest park, famous for its Mkata Floodplain, diverse
-                        wildlife, and easy access from Dar.</p>
+                    <h3 class="h3-waf" style="color: #ff6600;">Salous Game Reserve</h3>
+                    <p style="color: black;">Discover Africa’s largest game reserve and a UNESCO World Heritage Site.
+                        Experience classic safaris, boat trips on the Rufiji River, and walking safaris.</p>
                     <div class="stars">★★★★★</div>
-                    <a href="ngorongoro.html" class="bten" style="width: 100px;">Explore</a>
+                    <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
             </div>
 
 
 
 
-
         </div>
 
+        <section class="video-section">
 
-        <div class="card-containerer">
-            <a href="zanzbar.html" class="small-card">
-                <span class="main-text">ZANZIBAR</span>
-            </a>
-
-            <a href="golden-hotel.html" class="small-card">
-                <span class="main-text">ISLAND</span>
-            </a>
-
-
-        </div>
-
-
-
-
-
-        <h1 class="main-title" style="color: #0b5b1c;">Serengeti Park video</h1>
-
-        <div class="text-block">
-            <p>
-                The best way of understanding what Serengeti National Park is about is
-                by seeing some thrilling footage from the area. Watch this video to experience the
-                Serengeti, its splendour and to meet some of our celebrity wildlife species.
-            </p>
-            <p>
-                Be careful, after watching this video you can be sure that you want to travel to Tanzania.
-                Today.
-            </p>
-        </div>
-
-        <div class="video-wrapper">
-            <div class="video-placeholderes">
-                <div class="video-overlay-content">
-                    <iframe width="756" height="425" src="https://www.youtube.com/embed/IfxoZ_tiE0g"
-                        title="Serengeti National Park, Tanzania  [Amazing Places 4K]" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                </div>
+            <div class="icon-container">
+                <i class="fas fa-video"></i>
             </div>
 
-        </div>
+            <h1 class="main-title" style="color: #0b5b1c;">Serengeti Park video</h1>
+
+            <div class="text-block">
+                <p>
+                    The best way of understanding what Serengeti National Park is about is
+                    by seeing some thrilling footage from the area. Watch this video to experience the
+                    Serengeti, its splendour and to meet some of our celebrity wildlife species.
+                </p>
+                <p>
+                    Be careful, after watching this video you can be sure that you want to travel to Tanzania.
+                    Today.
+                </p>
+            </div>
+
+            <div class="video-wrapper">
+                <div class="video-placeholderes">
+                    <div class="video-overlay-content">
+                        <iframe width="756" height="425" src="https://www.youtube.com/embed/IfxoZ_tiE0g"
+                            title="Serengeti National Park, Tanzania  [Amazing Places 4K]" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 
@@ -3801,7 +3563,7 @@
         <div class="stat-box">
             <div class="icon-circle"><i class="fas fa-plane"></i></div>
             <!-- <div class="stat-number" data-count="100">0</div> -->
-            <span class="counter" data-count="100" style="font-size: 3rem; font-weight:500">0</span>
+            <span class="counter" data-count="123" style="font-size: 3rem; font-weight:500">0</span>
             <div class="stat-label">Luxury Safaris</div>
         </div>
 
@@ -3827,7 +3589,7 @@
     </section>
 
 
-    <!-- <div class="loof">
+    <div class="loof">
         <section class="accommodation-section" id="accomodation-home">
             <header>
                 <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color:#ff6600">ACCOMMODATION</h2>
@@ -3845,7 +3607,7 @@
                     <img src="b2bf1c68ffa43769fae0bcfa239c57ab.jpg" alt="Luxury hotel or lodge room">
                     <div class="card-overlay">
                         <p class="card-title">LODGE & HOTEL</p>
-                        <a href="book-your.html" class="view-button">VIEW</a>
+                        <a href="#" class="view-button">VIEW</a>
                     </div>
                 </div>
 
@@ -3865,448 +3627,417 @@
                     </div>
                 </div>
             </div>
-        </section>  -->
+        </section>
 
 
-    <div class="loof">
-        <section class="accommodation-section" id="accomodation-home">
+        <div class="plain slide active" id="vision-slide">
+            <i class="fa-solid.fa-quote-left" id="liq-vision"></i>
+            <h1 class="vsio">VISION</h1>
+
+            <div class="plain-p">
+                "To become the superlative <br> Tourism & Transportation Operator in <br> Tanzania & Africa at Large"
+            </div>
+        </div>
+
+        <div class="plain slide" id="mission-slide">
+            <i class="fa-solid.fa-quote-left" id="liq-mission"></i>
+            <h1 class="vsio">MISSION</h1>
+
+            <div class="plain-p">
+                "To provide unforgettable, safe,<br> and quality travel experiences <br>while promoting <br> sustainable
+                tourism and
+                empowering local communities."
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <section class="activities-section" id="activity-sm">
             <header>
-                <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color:#ff6600">ACCOMMODATION</h2>
+                <h2 class="section-title">HOLL TOUR SIGNATURE SAFARI ACTIVITIES</h2>
+                <p class="section-description">
+                    Experience the wild in ways no one else offers. These unique excursions go beyond the
+                    traditional
+                    game
+                    drive, giving you exclusive access to conservation efforts and specialized landscapes.
+                </p>
             </header>
 
-            <p class="intro-text">
-                There are a variety of accommodation properties within NCA, ranging from luxury hotels, lodges,
-                tented
-                camps
-                and public camping sites located in some of the most pristine scenic areas.
-            </p>
-    </div>
+            <div class="slider-wrapper">
 
-    <section class="info-section">
+                <button class="slider-nav prev-btn" id="prev-activity-btn" aria-label="Previous Activity">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
 
-        <div class="left-image">
-            <img src="zanz-bed.jpg" alt="Safari view">
+                <div class="slider-track" id="slider-track">
+
+                    <div class="activity-card featured hidden">
+                        <div class="card-image">
+                            <img src="7149d752291265267c69a4246c9b5753.jpg" alt="Game Drive">
+                        </div>
+                        <div class="card-content">
+                            <h3>Game Drive</h3>
+                            <p>Set out before sunrise with a research ranger to track collared predators using radio
+                                telemetry. This hands-on conservation experience offers real-time insights into wildlife
+                                behavior and ecosystem dynamics.</p>
+                            <a href="#" class="details-button">Explore</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card featured hidden">
+                        <div class="card-image">
+                            <img src="4b61e37592b07e4ee93a698482216dde.jpg" alt="Maasai elders under starry night">
+                        </div>
+                        <div class="card-content">
+                            <h3>Maasai Stargazer Boma</h3>
+                            <p>Join Maasai elders at twilight to explore ancient star lore. Using powerful telescopes,
+                                you'll view the Milky Way while learning how celestial wisdom guides traditional life
+                                and seasonal rhythms.</p>
+                            <a href="#" class="details-button">Explore</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card featured hidden">
+                        <div class="card-image">
+                            <img src="b4771af9ec216865b5c996438a98f5c3.jpg" alt="Walking Activities">
+                        </div>
+                        <div class="card-content">
+                            <h3>Walking Activities </h3>
+                            <p>Walk through geothermal landscapes with thermal cameras to uncover hidden hot springs and
+                                geological wonders. This immersive activity blends science, exploration, and photography
+                                in nature’s most dynamic settings.</p>
+                            <a href="#" class="details-button">Explore</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card featured hidden">
+                        <div class="card-image">
+                            <img src="7134eb231fa66597dfdd4d6790c9fa78.jpg" alt="photographic Activities">
+                        </div>
+                        <div class="card-content">
+                            <h3>photographic Activities</h3>
+                            <p>Capture the beauty of nature with our guided photographic safaris. Experience the thrill
+                                of spotting wild animals up close, learn camera techniques from experts, and take home
+                                unforgettable memories of Tanzania’s breathtaking landscapes.</p>
+                            <a href="#" class="details-button">Explore</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card featured hidden">
+                        <div class="card-image">
+                            <img src="Olivers_Camp-8.jpg" alt="Chef cooking in safari camp kitchen">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chef cooking in safari camp kitchen</h3>
+                            <p>Go behind-the-scenes! Learn 'Bush Gourmet' secrets from your private chef, from
+                                cooking
+                                to
+                                crafting sundowner cocktails.</p>
+                            <a href="#" class="details-button">Explore</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card featured hidden">
+                        <div class="card-image">
+                            <img src="OIP (6).webp" alt="Ballon Activities">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ballon Activities</h3>
+                            <p>Go behind-the-scenes! Learn 'Bush Gourmet' secrets from your private chef, from
+                                cooking
+                                to
+                                crafting sundowner cocktails.</p>
+                            <a href="#" class="details-button">Explore</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="slider-nav next-btn" id="next-activity-btn" aria-label="Next Activity">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+            <a href="view-all.html" class="details-button" style="width: 150px; ">View All</a>
+        </section>
+
+        <script src="app.js"></script>
+
+
+
+
+        <div class="gtco-testimonials" id="review-home">
+            <h2>Reviewers</h2>
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div>
+                    <div class="card text-center"><img class="card-img-top" src="IMG-20251020-WA0038.jpg" alt="">
+                        <div class="card-body">
+                            <h5>David Castory
+
+                                <span> Mr Vitamin </span>
+                            </h5>
+                            <p class="card-text">“The trip was amazing! Great service, friendly guides, and beautiful
+                                places. Everything was well organized — I’ll definitely book again!” </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card text-center"><img class="card-img-top" src="IMG-20251021-WA0002.jpg" alt="">
+                        <div class="card-body">
+                            <h5>Sabri Kisaka
+
+                                <span> Last Born</span>
+                            </h5>
+                            <p class="card-text">“Loved every moment of the tour. The team was helpful, kind, and
+                                professional. Highly recommend for an unforgettable experience!”</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card text-center"><img class="card-img-top" src="IMG-20251021-WA0003.jpg" alt="">
+                        <div class="card-body">
+                            <h5>Japhary Said
+
+                                <span> Mr-j_Fo </span>
+                            </h5>
+                            <p class="card-text">“ “Fantastic experience! The safari was breathtaking, and the guides
+                                made everything fun and easy. I’ll never forget this trip!”</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card text-center"><img class="card-img-top" src="PXL_20251017_100203461.PORTRAIT.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <h5>Asheeqa Mussa
+
+                                <span> Ashly </span>
+                            </h5>
+                            <p class="card-text">“ “Very well planned tour. Comfortable transport, great food, and
+                                awesome views. Totally worth the price!” </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="right-text">
-            <h2>Our Accomodation </h2>
-            <p>
-                Comfortable lodges and scenic camps offer relaxing stays near wildlife, blending nature, safety, and
-                authentic safari hospitality for every traveler.
-            </p>
-
-            <a href="book-your.html" class="explore-link">Explore More</a>
-        </div>
-
-    </section>
-
-
-    <div class="plain slide active" id="vision-slide">
-        <i class="fa-solid.fa-quote-left" id="liq-vision"></i>
-        <h1 class="vsio">VISION</h1>
-
-        <div class="plain-p">
-            "To become the superlative <br> Tourism & Transportation Operator in <br> Tanzania & Africa at Large"
-        </div>
-    </div>
-
-    <div class="plain slide" id="mission-slide">
-        <i class="fa-solid.fa-quote-left" id="liq-mission"></i>
-        <h1 class="vsio">MISSION</h1>
-
-        <div class="plain-p">
-            "To provide unforgettable, safe,<br> and quality travel experiences <br>while promoting <br> sustainable
-            tourism and
-            empowering local communities."
-
-        </div>
-    </div>
 
 
 
 
+        <section class="why-travel">
+            <div class="why-text">
+                <h1>Why Travel<br>with Holligrvens Adventures &<br>Safaris?</h1>
+            </div>
+
+            <div class="reason-box">
+                <h2>TRAVEL WITH REASONS</h2>
+                <p>
+                    Our accommodation is both luxurious and authentic. We promise unexampled comfort
+                    and exclusivity while staying true to the vibrant soul and spirit of each, unique
+                    destination. Our private game viewing areas have limits on guest figures, meaning
+                    smaller vehicles and people, with more intimate and over-close hassles with wildlife
+                    in their natural niche.
+                </p>
+            </div>
+        </section>
 
 
 
-    <section class="activities-section" id="activity-sm">
-        <header>
-            <h2 class="section-title">HOLL TOUR SIGNATURE SAFARI ACTIVITIES</h2>
-            <p class="section-description">
-                Experience the wild in ways no one else offers. These unique excursions go beyond the
-                traditional
-                game
-                drive, giving you exclusive access to conservation efforts and specialized landscapes.
-            </p>
+
+        <header class="gallery-header" id="gallery-home">
+            <h1>GALLERY</h1>
         </header>
 
-        <div class="slider-wrapper">
-
-            <button class="slider-nav prev-btn" id="prev-activity-btn" aria-label="Previous Activity">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-
-            <div class="slider-track" id="slider-track">
-
-                <div class="activity-card featured hidden">
-                    <div class="card-image">
-                        <img src="7149d752291265267c69a4246c9b5753.jpg" alt="Game Drive">
-                    </div>
-                    <div class="card-content">
-                        <h3>Game Drive</h3>
-                        <p>Set out before sunrise with a research ranger to track collared predators using radio
-                            telemetry. This hands-on conservation experience offers real-time insights into wildlife
-                            behavior and ecosystem dynamics.</p>
-                        <a href="#" class="details-button">Explore</a>
-                    </div>
-                </div>
-
-                <div class="activity-card featured hidden">
-                    <div class="card-image">
-                        <img src="4b61e37592b07e4ee93a698482216dde.jpg" alt="Maasai elders under starry night">
-                    </div>
-                    <div class="card-content">
-                        <h3>Maasai Stargazer Boma</h3>
-                        <p>Join Maasai elders at twilight to explore ancient star lore. Using powerful telescopes,
-                            you'll view the Milky Way while learning how celestial wisdom guides traditional life
-                            and seasonal rhythms.</p>
-                        <a href="#" class="details-button">Explore</a>
-                    </div>
-                </div>
-
-                <div class="activity-card featured hidden">
-                    <div class="card-image">
-                        <img src="b4771af9ec216865b5c996438a98f5c3.jpg" alt="Walking Activities">
-                    </div>
-                    <div class="card-content">
-                        <h3>Walking Activities </h3>
-                        <p>Walk through geothermal landscapes with thermal cameras to uncover hidden hot springs and
-                            geological wonders. This immersive activity blends science, exploration, and photography
-                            in nature’s most dynamic settings.</p>
-                        <a href="#" class="details-button">Explore</a>
-                    </div>
-                </div>
-
-                <div class="activity-card featured hidden">
-                    <div class="card-image">
-                        <img src="7134eb231fa66597dfdd4d6790c9fa78.jpg" alt="photographic Activities">
-                    </div>
-                    <div class="card-content">
-                        <h3>photographic Activities</h3>
-                        <p>Capture the beauty of nature with our guided photographic safaris. Experience the thrill
-                            of spotting wild animals up close, learn camera techniques from experts, and take home
-                            unforgettable memories of Tanzania’s breathtaking landscapes.</p>
-                        <a href="#" class="details-button">Explore</a>
-                    </div>
-                </div>
-
-                <div class="activity-card featured hidden">
-                    <div class="card-image">
-                        <img src="Olivers_Camp-8.jpg" alt="Chef cooking in safari camp kitchen">
-                    </div>
-                    <div class="card-content">
-                        <h3>Chef cooking in safari camp kitchen</h3>
-                        <p>Go behind-the-scenes! Learn 'Bush Gourmet' secrets from your private chef, from
-                            cooking
-                            to
-                            crafting sundowner cocktails.</p>
-                        <a href="#" class="details-button">Explore</a>
-                    </div>
-                </div>
-
-                <div class="activity-card featured hidden">
-                    <div class="card-image">
-                        <img src="OIP (6).webp" alt="Ballon Activities">
-                    </div>
-                    <div class="card-content">
-                        <h3>Ballon Activities</h3>
-                        <p>Go behind-the-scenes! Learn 'Bush Gourmet' secrets from your private chef, from
-                            cooking
-                            to
-                            crafting sundowner cocktails.</p>
-                        <a href="#" class="details-button">Explore</a>
-                    </div>
-                </div>
-
+        <nav class="gallery-nav">
+            <div class="nav-tab active">
+                <a href="#fox"> <i class="fas fa-camera"></i> Photos</a>
             </div>
 
-            <button class="slider-nav next-btn" id="next-activity-btn" aria-label="Next Activity">
-                <i class="fas fa-chevron-right"></i>
-            </button>
+        </nav>
+
+        <main class="gallery-content" id="fox">
+            <div class="gallery-container" id="fox">
+                <div class="gallery-item"><img src="R.jpg" alt="Lioness and cub">
+                </div>
+                <div class="gallery-item"><img src="03a76a3e87eb9d77f2e0588f34bfed6a.jpg"
+                        alt="Safari jeep and elephant">
+                </div>
+                <div class="gallery-item"><img src="12eed0b99d5437cc0b4bc5c1961f4a4c.jpg" alt="Black rhino"></div>
+                <div class="gallery-item"><img src="14113c221dd64d4aff4db8c48f9798cd.jpg" alt="Flamingos at a lake">
+                </div>
+                <div class="gallery-item"><img src="27236c7fdbfcf7f35cce33697bd70c2c.jpg" alt="Zebras by the water">
+                </div>
+                <div class="gallery-item"><img src="815d2a8416fbdf1d0b50e6bd100e59e1.jpg" alt="Elephant drinking water">
+                </div>
+                <div class="gallery-item"><img src="03a76a3e87eb9d77f2e0588f34bfed6a.jpg" alt="Tourists photographing">
+                </div>
+                <div class="gallery-item"><img src="6315336da2f50ddb6613efc759adc1f9.jpg"
+                        alt="Tourists in a safari jeep">
+                </div>
+                <div class="gallery-item"><img src="9851049ab09423206b9858a5f75f2606.jpg" alt="Lioness and cub">
+                </div>
+                <div class="gallery-item"><img src="72169955d6c44ad504d7cfb3e28ade33.jpg"
+                        alt="Safari jeep and elephant">
+                </div>
+                <div class="gallery-item"><img src="3de4cace4250f8f5160099808e0dc8b1.jpg" alt="Black rhino"></div>
+                <div class="gallery-item"><img src="5cc63416f068f61d3e0b5b5ed0724b40.jpg" alt="Flamingos at a lake">
+                </div>
+                <div class="gallery-item"><img src="d79ee86d60c6f68061bb5c37c24409cb.jpg" alt="Zebras by the water">
+                </div>
+                <div class="gallery-item"><img src="5cc63416f068f61d3e0b5b5ed0724b40.jpg" alt="Elephant drinking water">
+                </div>
+                <div class="gallery-item"><img src="faf6d13c437930b034485b306ca2e093.jpg" alt="Tourists photographing">
+                </div>
+                <div class="gallery-item"><img src="little-governors-camp-masai-mara-safari-bush-dining-scaled.webp"
+                        alt="Tourists in a safari jeep">
+                </div>
+                <div class="gallery-item"><img src="OIP (1).webp" alt="Lioness and cub"></div>
+                <div class="gallery-item"><img src="R (1).jpg" alt="Safari jeep and elephant">
+                </div>
+                <div class="gallery-item"><img src="R.jpg" alt="Black rhino"></div>
+                <div class="gallery-item"><img src="473544254c0050559fd474a8913e0e19.jpg" alt="Flamingos at a lake">
+                </div>
+            </div>
+
+        </main>
+
+
+
+
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.101880486005!2d36.6575122!3d-3.3768222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c6c0393046f%3A0xc48c0379261a8685!2sArusha%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
 
-        <a href="view-all.html" class="details-button" style="width: 150px; ">View All</a>
-    </section>
+        <section class="amazing-sectioning" id="only-cont">
 
-    <script src="app.js"></script>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message" placeholder="Message"></textarea>
+
+            <button type="submit" class="submit-btn">Send</button>
+
+            <h2>Get In Touch Us</h2>
+            <p style="color: white;">amazing us today to start planning your unforgettable Tanzanian experience.</p>
+
+            <div class="amazing-info">
+                <div class="rent-boxing">
+                    <h4>📞 Phone</h4>
+                    <p>+255 715 830 783</p>
+                </div>
+                <div class="rent-boxing">
+                    <h4>📍 Location</h4>
+                    <p>Arusha, Tanzania</p>
+                </div>
+                <div class="rent-boxing">
+                    <h4>🕒 Office Hours</h4>
+                    <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+
+            <div class="loss-containering" id="">
+                <form>
+                    <input type="text" placeholder="Your Name" required style="height: 50px;">
+                    <input type="email" placeholder="Your Email" required style="height: 50px;">
+                    <input type="phone" placeholder="Your phone number" required style="height: 50px;">
+                    <select required>
+                        <option>Select Tour Package</option>
+                        <option>Serengeti Safari</option>
+                        <option>Tarangire Safari</option>
+                        <option>Zanzibar Safari</option>
+                        <option>Lake Manyara Safari</option>
+                        <option>Mafia Island Safari/option>
+                        <option>Salous Game Reserve Safari</option>
+                    </select>
+                    <input type="date" required style="height: 50px;">
+                    <input type="number" placeholder="Number of People" min="1" required style="height: 50px;">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button class="btns btns-green">Send Message</button>
+                </form>
+
+            </div>
+        </section>
 
 
 
 
-    <div class="gtco-testimonials" id="review-home">
-        <h2>Reviewers</h2>
-        <div class="owl-carousel owl-carousel1 owl-theme">
-            <div>
-                <div class="card text-center"><img class="card-img-top" src="IMG-20251020-WA0038.jpg" alt="">
-                    <div class="card-body">
-                        <h5>David Castory
 
-                            <span> Mr Vitamin </span>
-                        </h5>
-                        <p class="card-text">“The trip was amazing! Great service, friendly guides, and beautiful
-                            places. Everything was well organized — I’ll definitely book again!” </p>
+
+        <footer>
+            <div class="footer-container" id="foot">
+
+                <div class="footer-col logo-col">
+                    <div class="footer-logo">HOLLI TOUR</div>
+                    <p class="tagline">Your personalized path to the African wilderness.</p>
+                    <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania</p>
+                    <p class="contact-item"><i class="fas fa-envelope"></i> info@holltour.com</p>
+                    <p class="contact-item"><i class="fas fa-phone-alt"></i> +255 777 123 456</p>
+                </div>
+
+                <div class="footer-col quick-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="co.html">Home</a></li>
+                        <li><a href="#destination-home">Destinations</a></li>
+                        <li><a href="#activity-sm">Activities</a></li>
+                        <li><a href="#review-home">Reviews</a></li>
+                        <li><a href="#gallery-home">Gallery</a></li>
+                        <li><a href="for..html">Contact</a>
+                    </ul>
+                </div>
+
+                <div class="footer-tours">
+                    <h4>Tours</h4>
+                    <ul>
+                        <li><a href="">Serengeti National Park</a></li>
+                        <li><a href="">tarangile National Park</a></li>
+                        <li><a href="">Zanzibari (unguja & Pemba)</a></li>
+                        <li><a href="">Lake Manyara National Park</a></li>
+                        <li><a href="">Mafia Island</a></li>
+                        <li><a href="">Salous Game Reserve</a></li>
+                    </ul>
+                </div> <br>
+
+                <div class="footer-col social-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card text-center"><img class="card-img-top" src="IMG-20251021-WA0002.jpg" alt="">
-                    <div class="card-body">
-                        <h5>Sabri Kisaka
 
-                            <span> Last Born</span>
-                        </h5>
-                        <p class="card-text">“Loved every moment of the tour. The team was helpful, kind, and
-                            professional. Highly recommend for an unforgettable experience!”</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card text-center"><img class="card-img-top" src="IMG-20251021-WA0003.jpg" alt="">
-                    <div class="card-body">
-                        <h5>Japhary Said
-
-                            <span> Mr-j_Fo </span>
-                        </h5>
-                        <p class="card-text">“ “Fantastic experience! The safari was breathtaking, and the guides
-                            made everything fun and easy. I’ll never forget this trip!”</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card text-center"><img class="card-img-top" src="PXL_20251017_100203461.PORTRAIT.jpg"
-                        alt="">
-                    <div class="card-body">
-                        <h5>Asheeqa Mussa
-
-                            <span> Ashly </span>
-                        </h5>
-                        <p class="card-text">“ “Very well planned tour. Comfortable transport, great food, and
-                            awesome views. Totally worth the price!” </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <section class="why-travel">
-        <div class="why-text">
-            <h1>Why Travel<br>with Holligrvens Adventures &<br>Safaris?</h1>
-        </div>
-
-        <div class="reason-box">
-            <h2>TRAVEL WITH REASONS</h2>
-            <p>
-                Our accommodation is both luxurious and authentic. We promise unexampled comfort
-                and exclusivity while staying true to the vibrant soul and spirit of each, unique
-                destination. Our private game viewing areas have limits on guest figures, meaning
-                smaller vehicles and people, with more intimate and over-close hassles with wildlife
-                in their natural niche.
-            </p>
-        </div>
-    </section>
-
-
-
-
-    <header class="gallery-header" id="gallery-home">
-        <h1>GALLERY</h1>
-    </header>
-
-    <nav class="gallery-nav">
-        <div class="nav-tab active">
-            <a href="#fox"> <i class="fas fa-camera"></i> Photos</a>
-        </div>
-
-    </nav>
-
-    <main class="gallery-content" id="fox">
-        <div class="gallery-container" id="fox">
-            <div class="gallery-item"><img src="R.jpg" alt="Lioness and cub">
-            </div>
-            <div class="gallery-item"><img src="03a76a3e87eb9d77f2e0588f34bfed6a.jpg" alt="Safari jeep and elephant">
-            </div>
-            <div class="gallery-item"><img src="12eed0b99d5437cc0b4bc5c1961f4a4c.jpg" alt="Black rhino"></div>
-            <div class="gallery-item"><img src="14113c221dd64d4aff4db8c48f9798cd.jpg" alt="Flamingos at a lake">
-            </div>
-            <div class="gallery-item"><img src="27236c7fdbfcf7f35cce33697bd70c2c.jpg" alt="Zebras by the water">
-            </div>
-            <div class="gallery-item"><img src="815d2a8416fbdf1d0b50e6bd100e59e1.jpg" alt="Elephant drinking water">
-            </div>
-            <div class="gallery-item"><img src="03a76a3e87eb9d77f2e0588f34bfed6a.jpg" alt="Tourists photographing">
-            </div>
-            <div class="gallery-item"><img src="6315336da2f50ddb6613efc759adc1f9.jpg" alt="Tourists in a safari jeep">
-            </div>
-            <div class="gallery-item"><img src="9851049ab09423206b9858a5f75f2606.jpg" alt="Lioness and cub">
-            </div>
-            <div class="gallery-item"><img src="72169955d6c44ad504d7cfb3e28ade33.jpg" alt="Safari jeep and elephant">
-            </div>
-            <div class="gallery-item"><img src="3de4cace4250f8f5160099808e0dc8b1.jpg" alt="Black rhino"></div>
-            <div class="gallery-item"><img src="5cc63416f068f61d3e0b5b5ed0724b40.jpg" alt="Flamingos at a lake">
-            </div>
-            <div class="gallery-item"><img src="d79ee86d60c6f68061bb5c37c24409cb.jpg" alt="Zebras by the water">
-            </div>
-            <div class="gallery-item"><img src="5cc63416f068f61d3e0b5b5ed0724b40.jpg" alt="Elephant drinking water">
-            </div>
-            <div class="gallery-item"><img src="faf6d13c437930b034485b306ca2e093.jpg" alt="Tourists photographing">
-            </div>
-            <div class="gallery-item"><img src="little-governors-camp-masai-mara-safari-bush-dining-scaled.webp"
-                    alt="Tourists in a safari jeep">
-            </div>
-            <div class="gallery-item"><img src="OIP (1).webp" alt="Lioness and cub"></div>
-            <div class="gallery-item"><img src="R (1).jpg" alt="Safari jeep and elephant">
-            </div>
-            <div class="gallery-item"><img src="R.jpg" alt="Black rhino"></div>
-            <div class="gallery-item"><img src="473544254c0050559fd474a8913e0e19.jpg" alt="Flamingos at a lake">
-            </div>
-        </div>
-
-    </main>
-
-
-
-
-
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.101880486005!2d36.6575122!3d-3.3768222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c6c0393046f%3A0xc48c0379261a8685!2sArusha%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </div>
-
-    <section class="amazing-sectioning" id="only-cont">
-        <h2>Get In Touch Us</h2>
-        <p style="color: white;">Contact us today to start planning your unforgettable Tanzanian experience.</p>
-
-        <div class="amazing-info">
-            <div class="rent-boxing">
-                <h4>📞 Phone</h4>
-                <p>+255 715 830 783</p>
-            </div>
-            <div class="rent-boxing">
-                <h4>📍 Location</h4>
-                <p>Arusha, Tanzania</p>
-            </div>
-            <div class="rent-boxing">
-                <h4>🕒 Office Hours</h4>
-                <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
-            </div>
-        </div>
-
-        <div class="loss-containering">
-
-            <form id="contactForm">
-
-                <input type="text" id="name" placeholder="Your Name" required style="height:50px;">
-
-                <input type="email" id="email" placeholder="Your Email" required style="height:50px;">
-
-                <input type="tel" id="phone" placeholder="Your Phone Number" required style="height:50px;">
-
-                <select id="package" required>
-                    <option value="">Select Tour Package</option>
-                    <option>Serengeti Safari</option>
-                    <option>Tarangire Safari</option>
-                    <option>Zanzibar Safari</option>
-                    <option>Lake Manyara Safari</option>
-                    <option>Mafia Island Safari</option>
-                    <option>Selous Game Reserve Safari</option>
-                </select>
-
-                <input type="date" id="date" required style="height:50px;">
-
-                <input type="number" id="people" placeholder="Number of People" min="1" required style="height:50px;">
-
-                <textarea id="message" placeholder="Your Message"></textarea>
-
-                <button type="submit" class="btns btns-green">Send Message</button>
-
-            </form>
-
-        </div>
-    </section>
-
-
-
-
-
-
-    <footer>
-        <div class="footer-container" id="foot">
-
-            <div class="footer-col logo-col">
-                <div class="footer-logo">HOLLI TOUR</div>
-                <p class="tagline">Your personalized path to the African wilderness.</p>
-                <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania</p>
-                <p class="contact-item"><i class="fas fa-envelope"></i> info@holltour.com</p>
-                <p class="contact-item"><i class="fas fa-phone-alt"></i> +255 777 123 456</p>
             </div>
 
-            <div class="footer-col quick-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="co.html">Home</a></li>
-                    <li><a href="#destination-home">Destinations</a></li>
-                    <li><a href="#activity-sm">Activities</a></li>
-                    <li><a href="#review-home">Reviews</a></li>
-                    <li><a href="#gallery-home">Gallery</a></li>
-                    <li><a href="for..html">Contact</a>
-                </ul>
+            <div class="footer-bottom">
+                &copy; 2025 Holli Tour. All rights reserved.
             </div>
 
-            <div class="footer-tours">
-                <h4>Tours</h4>
-                <ul>
-                    <li><a href="">Serengeti National Park</a></li>
-                    <li><a href="">tarangile National Park</a></li>
-                    <li><a href="">Zanzibari (unguja & Pemba)</a></li>
-                    <li><a href="">Lake Manyara National Park</a></li>
-                    <li><a href="">Mafia Island</a></li>
-                    <li><a href="">Salous Game Reserve</a></li>
-                </ul>
-            </div> <br>
 
-            <div class="footer-col social-col">
-                <h4>Connect With Us</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
-
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            &copy; 2025 Holli Tour. All rights reserved.
-        </div>
-
-
-        <script src="scroll.js"></script>
+            <script src="scroll.js"></script>
 
 
 
-        <!-- <script>
+            <!-- <script>
                 const images = [
 
                     "url('R.jpg')",
@@ -4332,223 +4063,151 @@
 
 
 
-        <!-- here script for slide -->
-        <script src="foercardslies.js"></script>
+            <!-- here script for slide -->
+            <script src="foercardslies.js"></script>
 
 
-        <script>
-            const date = new Date();
-            const hour = date.getHours();
+            <script>
+                const date = new Date();
+                const hour = date.getHours();
 
 
-            let greeting;
+                let greeting;
 
-            if (hour < 12) {
-                greeting = "Hello it's morning";
-            } else if (hour < 18) {
-                greeting = "Hello it's afternoon";
-            } else if (hour < 22) {
-                greeting = "Hello It's evening";
-            }
+                if (hour < 12) {
+                    greeting = "Hello it's morning";
+                } else if (hour < 18) {
+                    greeting = "Hello it's afternoon";
+                } else if (hour < 22) {
+                    greeting = "Hello It's evening";
+                }
 
-            document.getElementById("greetingMassage").textContent = greeting;
+                document.getElementById("greetingMassage").textContent = greeting;
 
-        </script>
+            </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+                integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+                crossorigin="anonymous"></script>
 
-        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+            <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
 
-        <script>
-            (function () {
-                "use strict";
+            <script>
+                (function () {
+                    "use strict";
 
-                var carousels = function () {
-                    $(".owl-carousel1").owlCarousel({
-                        loop: true,
-                        center: true,
-                        margin: 0,
-                        responsiveClass: true,
-                        nav: false,
-                        responsive: {
-                            0: {
-                                items: 1,
-                                nav: false
-                            },
-                            680: {
-                                items: 2,
-                                nav: false,
-                                loop: false
-                            },
-                            1000: {
-                                items: 3,
-                                nav: true
+                    var carousels = function () {
+                        $(".owl-carousel1").owlCarousel({
+                            loop: true,
+                            center: true,
+                            margin: 0,
+                            responsiveClass: true,
+                            nav: false,
+                            responsive: {
+                                0: {
+                                    items: 1,
+                                    nav: false
+                                },
+                                680: {
+                                    items: 2,
+                                    nav: false,
+                                    loop: false
+                                },
+                                1000: {
+                                    items: 3,
+                                    nav: true
+                                }
                             }
+                        });
+                    };
+
+                    (function ($) {
+                        carousels();
+                    })(jQuery);
+                })();
+            </script>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+
+                    const visionSlide = document.getElementById('vision-slide');
+                    const missionSlide = document.getElementById('mission-slide');
+
+                    const duration = 4000;
+
+                    let isVisionActive = true;
+
+                    function switchSlide() {
+                        if (isVisionActive) {
+                            visionSlide.classList.remove('active');
+                            missionSlide.classList.add('active');
+                        } else {
+                            missionSlide.classList.remove('active');
+                            visionSlide.classList.add('active');
                         }
-                    });
-                };
 
-                (function ($) {
-                    carousels();
-                })(jQuery);
-            })();
-        </script>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-
-                const visionSlide = document.getElementById('vision-slide');
-                const missionSlide = document.getElementById('mission-slide');
-
-                const duration = 4000;
-
-                let isVisionActive = true;
-
-                function switchSlide() {
-                    if (isVisionActive) {
-                        visionSlide.classList.remove('active');
-                        missionSlide.classList.add('active');
-                    } else {
-                        missionSlide.classList.remove('active');
-                        visionSlide.classList.add('active');
+                        isVisionActive = !isVisionActive;
                     }
 
 
-                    isVisionActive = !isVisionActive;
-                }
+                    setInterval(switchSlide, duration);
+                });
+            </script>
+            <script>
+                const navbar = document.querySelector("nav");
 
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add("scrolled");
+                    } else {
+                        navbar.classList.remove("scrolled");
+                    }
+                });
+            </script>
 
-                setInterval(switchSlide, duration);
-            });
-        </script>
-        <script>
-            const navbar = document.querySelector("nav");
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+                integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+            <script>
+                document.getElementById("contactForm").addEventListener("submit", async function (e) {
+                    e.preventDefault();
 
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add("scrolled");
-                } else {
-                    navbar.classList.remove("scrolled");
-                }
-            });
-        </script>
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const message = document.getElementById("message").value;
 
-        <script>
-            document.getElementById("contactForm").addEventListener("submit", async function (e) {
-                e.preventDefault();
-
-                const data = {
-                    name: document.getElementById("name").value,
-                    email: document.getElementById("email").value,
-                    phone: document.getElementById("phone").value,
-                    package: document.getElementById("package").value,
-                    date: document.getElementById("date").value,
-                    people: document.getElementById("people").value,
-                    message: document.getElementById("message").value
-                };
-
-                try {
-
-                    const res = await fetch("http://127.0.0.1:5000/send", {
+                    const res = await fetch("http://127.0.0.1:5000/send-message", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
                         },
-                        body: JSON.stringify(data)
+                        body: JSON.stringify({
+                            name,
+                            email,
+                            message
+                        })
                     });
 
-                    const result = await res.json();
+                    const data = await res.json();
 
-                    if (result.status === "ok") {
-                        alert("✅ Booking saved in database and email sent!");
+                    if (data.success) {
+                        alert("Message sent successfully ✅");
                         document.getElementById("contactForm").reset();
                     } else {
-
-                        alert("❌ Failed: " + (result.msg || "Unknown error"));
-                        console.error(result);
+                        alert("Error sending message ❌");
                     }
+                });
+            </script>
 
-                } catch (err) {
-                    console.error(err);
-                    alert("❌ Server not running or connection failed");
-                }
-            });
-        </script>
-
-        <script>
-            const chatIcon = document.getElementById('chat-icon');
-            const chatContainer = document.getElementById('chat-container');
-            const closeBtn = document.getElementById('close-btn');
-            const chatBox = document.getElementById('chat-box');
-            const userInput = document.getElementById('user-input');
-            const sendBtn = document.getElementById('send-btn');
-
-            chatIcon.onclick = () => {
-                chatContainer.style.display = 'flex';
-                chatIcon.style.display = 'none'; // Hide icon when chat is open
-            };
-
-            closeBtn.onclick = () => {
-                chatContainer.style.display = 'none';
-                chatIcon.style.display = 'flex'; // Show icon when chat is closed
-            };
-
-            function appendMessage(text, sender) {
-                const msgDiv = document.createElement('div');
-                msgDiv.className = `message ${sender}`;
-                msgDiv.innerText = text;
-                chatBox.appendChild(msgDiv);
-                chatBox.scrollTop = chatBox.scrollHeight;
-            }
-
-            async function handleChat() {
-                const message = userInput.value.trim();
-                if (!message) return;
-
-                appendMessage(message, 'user');
-                userInput.value = '';
-
-                try {
-                    const response = await fetch('http://127.0.0.1:5000/chat', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ message: message })
-                    });
-                    const data = await response.json();
-                    appendMessage(data.reply || "I'm having trouble connecting.", 'bot');
-                } catch (error) {
-                    appendMessage("Error: Is your Python server running?", 'bot');
-                }
-            }
-
-            sendBtn.onclick = handleChat;
-            userInput.onkeypress = (e) => { if (e.key === 'Enter') handleChat(); };
-        </script>
-
-
-        <script src="count.js"></script>
+            <script src="count.js"></script>
 
 
 
-        <!--Start of Tawk.to Script-->
-        <script type="text/javascript">
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function () {
-                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-                s1.async = true;
-                s1.src = 'https://embed.tawk.to/69a0649c9825341c37479e3f/1jid8i1kl';
-                s1.charset = 'UTF-8';
-                s1.setAttribute('crossorigin', '*');
-                s0.parentNode.insertBefore(s1, s0);
-            })();
-        </script>
-        <!--End of Tawk.to Script-->
+
 </body>
 
 </html>

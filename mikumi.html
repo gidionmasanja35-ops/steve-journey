@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngorongoro Conservation Area</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+
+
+    <link rel="stylesheet" href="foercardslies.css">
+
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <i class="bi bi-caret-down-fill"></i>
+    <style>
+        :root {
+            --primary-green: #4a5d3a;
+            --accent-orange: #d15a2a;
+            --bg-cream: #f4eee1;
+            --text-dark: #333;
+            --gold-season: #c69331;
+            --dark-season: #4d3d38;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+        .hero {
+            height: 500px;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/mik.wall.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 20px;
+            line-height: 1.6;
+        }
+
+        .tripadvisor-badge {
+            margin-top: 30px;
+            width: 140px;
+        }
+
+        /* Torn Paper Divider */
+        .divider {
+            height: 50px;
+            background: var(--bg-cream);
+            clip-path: polygon(0% 100%, 5% 85%, 10% 100%, 15% 80%, 20% 100%, 25% 90%, 30% 100%, 35% 85%, 40% 100%, 45% 80%, 50% 100%, 55% 90%, 60% 100%, 65% 85%, 70% 100%, 75% 80%, 80% 100%, 85% 90%, 90% 100%, 95% 85%, 100% 100%);
+            margin-top: -49px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* --- TRIP DETAIL CONTENT (Image 2) --- */
+        .detail-layout {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 50px;
+            padding: 0 20px;
+        }
+
+        .description h2 {
+            color: var(--primary-green);
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .description p {
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .image-gallery {
+            width: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            display: block;
+        }
+
+        .price-sidebar {
+            background: #fdfaf3;
+            border: 1px solid #e0d8c8;
+            padding: 25px;
+            border-radius: 2px;
+            font-size: 0.9rem;
+        }
+
+        .price-sidebar h3 {
+            text-align: center;
+            color: var(--primary-green);
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .season-block {
+            margin-bottom: 20px;
+        }
+
+        .season-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            text-align: center;
+        }
+
+        .grid-header {
+            font-size: 0.75rem;
+            padding-bottom: 5px;
+        }
+
+        .price-box {
+            padding: 10px 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .low {
+            background: var(--primary-green);
+        }
+
+        .mid {
+            background: var(--gold-season);
+        }
+
+        .high {
+            background: var(--grey-season);
+        }
+
+        .included-section {
+            margin-top: 30px;
+        }
+
+        .included-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .included-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            background: #ffcc00;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 900px) {
+            .detail-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #38761d;
+
+
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .contact-item {
+
+            margin-right: 15px;
+            white-space: nowrap;
+        }
+
+
+        .contact-item:nth-child(even) {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .e-heading {
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .l-heading {
+            color: #f2f5f2;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin-top: 12rem;
+        }
+
+        .container-fluid {
+            font-size: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            gap: 15px;
+            content: '';
+
+
+
+
+        }
+
+        .container-fluid:hover {
+            transform: scale(1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding-top: 50px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+        }
+
+
+        .footer-logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            margin: 5px 0;
+            color: #ccc;
+        }
+
+        .contact-item i {
+            color: #4CAF50;
+            margin-right: 10px;
+            width: 15px;
+        }
+
+
+        .footer-col h4 {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .quick-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quick-links ul li {
+            margin-bottom: 8px;
+        }
+
+        .quick-links ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .quick-links ul li a:hover {
+            color: #4CAF50;
+        }
+
+
+        .social-icons {
+            margin-top: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #4CAF50;
+            transform: scale(1.1);
+        }
+
+
+        .legal-links a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-bottom: 5px;
+        }
+
+        .legal-links a:hover {
+            color: #4CAF50;
+        }
+
+
+        .footer-bottom {
+            background-color: #222;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 0.8em;
+            color: #999;
+            border-top: 1px solid #444;
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .footer-col {
+                min-width: 100%;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #444;
+
+            }
+
+
+            .footer-col h4 {
+                margin: 0 auto 15px auto;
+            }
+
+            .quick-links ul {
+                width: fit-content;
+                margin: 0 auto;
+            }
+
+            .social-icons {
+                justify-content: center;
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+
+            .legal-links {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+
+            .footer-col:last-of-type {
+                border-bottom: none;
+            }
+        }
+
+        .footer-tours ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-tours ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-tours li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-tours li a:hover {
+            color: #4CAF50;
+        }
+
+
+        .footer-tours h4 {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .ah {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: auto;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            height: 65px;
+
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            width: 90%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        #slide {
+            width: 100%;
+            display: block;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .fade-in {
+            animation: fadeInEffect 1.5s;
+        }
+
+        @keyframes fadeInEffect {
+            from {
+                opacity: 0.3;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+
+            background-color: #e9e0d2;
+            color: #d35400;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 30px;
+            font-weight: bold;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: #fdfaf5;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .prev::before {
+            content: '❮';
+        }
+
+        .next::before {
+            content: '❯';
+        }
+
+
+
+        .slider-nav {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .slider-nav:hover {
+            background-color: #3e8e41;
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .slider-nav:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            box-shadow: none;
+            transform: translateY(-50%);
+        }
+
+        .activity-card.hidden {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .activity-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+
+        @media screen and (max-width: 992px) {
+            .slider-wrapper {
+                padding: 0 20px;
+            }
+
+            .slider-nav {
+                display: none;
+
+            }
+        }
+    </style>
+</head>
+
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".navbar ul").classList.toggle("show");
+    }
+</script>
+
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<style>
+    .scrolled {
+        background-color: white !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: background 0.4s ease, box-shadow 0.4s ease;
+    }
+</style>
+
+<body>
+
+    <div class="contact-info-container" style="position: fixed;
+  top: 0;
+  width: 100%;z-index: 1000;">
+        <div class="contact-item">📞 +255624689318</div>
+        <div class="contact-item">|</div>
+        <div class="contact-item">📧 info@Hollgrivens.com</div>
+        <div class="contact-item">|</div>
+        <div class="contact-item">📍 Arusha, Tanzania .</div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm p-3 font-size:25px" style="position: fixed;
+  width: 100%;z-index: 99999; margin-top:50px">
+        <div class="container-fluid">
+
+            <div class="logo-lrf">
+                <img src="HOLL.png" alt="your tour logo">
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destination-home">Destinations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accomodation-home">Accomodation</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#activity-sm">Activities</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#review-home">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery-home">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cont.html">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Mikumi National Park</h1>
+        <p>Welcome to Africa's Leading Tourist Attraction 2025: the Ngorongoro Crater. Besides the highest concentration
+            of wildlife in Africa, including the Big Five and the entire cast of The Lion King, this one-of-a-kind
+            scenery is also home to the famous Maasai tribe.....</p>
+
+    </header>
+    <div class="divider"></div>
+
+    <div class="detail-layout">
+        <article class="description">
+            <h2>NGORONGORO NATIONAL PARK</h2>
+            <P>Mikumi National Park is one of the southern <a href="index.html">national park in Tanzania</a>. Its
+                open horizons and abundant
+                wildlife draws frequent comparisons to the more famous Serengeti Plains. The park borders the Selous
+                Game Reserve to the south and the two areas form a unique ecosystem. The chance that you will encounter
+                lions climbing trees here is greater than in other parks!
+
+            </P>
+
+            <div class="slideshow-container">
+                <img id="slide" src="img/ngo1.jpg" alt="Slideshow Image" class="fade-in">
+
+                <button class="prev" onclick="prev()">&#10094;</button>
+                <button class="next" onclick="next()">&#10095;</button>
+
+            </div>
+
+            <h2>Wildlife in the Mikumi National Park</h2>
+            <p>The park has a great variety of animals and most visitors come to this National Park aiming to spot four
+                of the ‘Big Five’ – leopard, lion, elephant and buffalo. It’s a great place for a Tanzania vacation, you
+                will enjoy it! Hippos live in a pair of mud pools and are one of the highlights. These are situated 5 km
+                north of the main entrance gate. They are supported by an ever-changing cast of water-birds.</p>
+
+            <p>The Mkata Foodplain is a wide area in Mikumi National Park that is very good for wildlife viewing. Lions
+                survey their grassy kingdom – and the zebra, wildebeest, impala and buffalo herds that migrate across it
+                – from the flattened tops of termite mounds, or sometimes during the rains, from perches high in the
+                trees. Giraffes forage in the isolated acacia stands that fringe the Mkata River, islets of shade
+                favoured also by Mikumi’s elephants. Mkata Foodplain is perhaps the most reliable place in Tanzania for
+                sightings of the powerful eland, the world’s largest antelope. The equally impressive greater kudu and
+                sable antelope haunt the miombo-covered foothills of the mountains that rise from Mikumi National Park’s
+                borders.</p>
+
+            <h2>Birds in Mikumi</h2>
+            <p>
+                Mikumi is a good place for bird lovers as it is also home to more than 400 different species of birds!
+
+                The Mkata River offers majestic views of fishing Open-billed Storks. Marabou stork, Red-billed
+                oxpeckers, Black-bellied bustard, Francolin, Cattle egret, Guinea-fowls, Hornbill and Malachite
+                Kingfischer are common birds in Mikumi National Park. The most colourful species are the Yellow-throated
+                long claw, the Lilac-breasted roller and the Bateleur eagle. European migrants are common in Mikumi
+                National Park during the rainy season.
+            </p>
+
+            <div class="slideshow-container">
+                <img id="slide" src="img/mik.7.jpg" alt="Slideshow Image" class="fade-in">
+
+            </div>
+
+            <h1>Excursions and activities in Ngorongoro Conservation Area</h1>
+
+            <ul>
+                <li>Mountainbike tour Lake Manyara</li>
+                <li>Visit Maasai village</li>
+                <li>Visit Hadzabe tribe</li>
+                <li>Cultural tour Mto wa Mbu</li>
+            </ul>
+
+
+
+
+
+
+        </article>
+
+
+
+        <aside class="price-sidebar">
+            <h3>Information and facts</h3>
+
+
+            <p>
+
+                Established in 1964, Mikumi National Park is the fourth largest in Tanzania, covering approximately
+                3,230 square kilometers. Often called the "Little Serengeti" due to its open savannahs and diverse
+                wildlife, it is a key part of the larger Selous-Nyerere ecosystem, allowing animals to move freely
+                between the reserves.
+            </p>
+
+            <h1>Most common animals</h1>
+            <ul>
+                <li>Rhinos</li>
+                <li>Hippos</li>
+                <li>Lions</li>
+                <li>Grant Gazelles</li>
+                <li>Thomson Gazelles</li>
+                <li>Zebras</li>
+                <li>Wildebeests</li>
+                <li>Warthogs</li>
+                <li>Highland Antelopes</li>
+                <li>Elephants</li>
+
+            </ul>
+
+            <h3>Fact About Mikumi</h3>
+
+
+
+            <p>The park is home to four of the "Big Five"—lions, leopards, elephants, and buffalo—along with giraffes,
+                zebras, and over 400 bird species. Its most famous feature is the Mkata Floodplain, where visitors
+                frequently spot the world’s largest antelope, the eland, and unique tree-climbing lions resting in the
+                acacia trees.</p>
+
+
+
+
+
+
+    </div>
+    </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container" id="foot">
+
+            <div class="footer-col logo-col">
+                <div class="footer-logo">HOLLI TOUR</div>
+                <p class="tagline">Your personalized path to the African wilderness.</p>
+                <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania</p>
+                <p class="contact-item"><i class="fas fa-envelope"></i> info@holltour.com</p>
+                <p class="contact-item"><i class="fas fa-phone-alt"></i> +255 777 123 456</p>
+            </div>
+
+            <div class="footer-col quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="co.html">Home</a></li>
+                    <li><a href="#destination-home">Destinations</a></li>
+                    <li><a href="#activity-sm">Activities</a></li>
+                    <li><a href="#review-home">Reviews</a></li>
+                    <li><a href="#gallery-home">Gallery</a></li>
+                    <li><a href="for..html">Contact</a>
+                </ul>
+            </div>
+
+            <div class="footer-tours">
+                <h4>Tours</h4>
+                <ul>
+                    <li><a href="">Serengeti National Park</a></li>
+                    <li><a href="">tarangile National Park</a></li>
+                    <li><a href="">Zanzibari (unguja & Pemba)</a></li>
+                    <li><a href="">Lake Manyara National Park</a></li>
+                    <li><a href="">Mafia Island</a></li>
+                    <li><a href="">Salous Game Reserve</a></li>
+                </ul>
+            </div> <br>
+
+            <div class="footer-col social-col">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Holli Tour. All rights reserved.
+        </div>
+
+        <script>
+            let images = [
+                "img/mik.5.jpg",
+                "img/mik.2.jpg",
+                "img/mik.6.jpg",
+                "img/mik5.jpg"
+
+            ];
+
+            let index = 0;
+            let autoPlayInterval;
+
+            function startAutoPlay() {
+                clearInterval(autoPlayInterval);
+                autoPlayInterval = setInterval(next, 5000);
+            }
+
+            function next() {
+                index++;
+                if (index >= images.length) {
+                    index = 0;
+                }
+                document.getElementById("slide").src = images[index];
+                startAutoPlay();
+            }
+
+            function prev() {
+                index--;
+                if (index < 0) {
+                    index = images.length - 1;
+                }
+                document.getElementById("slide").src = images[index];
+            }
+            window.onload = startAutoPlay;
+
+        </script>
+
+        <script>
+            const navbar = document.querySelector("nav");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        </script>
+
+
+</body>
+
+</html>

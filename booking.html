@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Booking Arusha</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your Public Key
+        })();
+
+
+
+    </script>
+    <style>
+        /* --- YOUR CSS --- */
+        .amazing-sectioning {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #0f172a;
+            font-family: sans-serif;
+        }
+
+        .amazing-sectioning h2 {
+            color: #22c55e;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .amazing-sectioning p {
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .amazing-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .rent-boxing {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 20px 30px;
+            min-width: 250px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .rent-boxing h4 {
+            color: #22c55e;
+            margin-bottom: 8px;
+        }
+
+        .rent-boxing p {
+            margin: 0;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        .loss-containering {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            flex: 1 1 45%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background-color: #0f172a;
+            color: white;
+            font-size: 0.95rem;
+        }
+
+        textarea {
+            flex: 1 1 100%;
+            height: 100px;
+        }
+
+        .btns {
+            flex: 1 1 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btns-green {
+            background-color: #22c55e;
+            color: white;
+        }
+
+        .btns-green:hover {
+            background-color: #16a34a;
+        }
+
+        /* Responsive Fix */
+        @media screen and (max-width: 768px) {
+
+            input,
+            select {
+                flex: 1 1 100%;
+            }
+
+            .amazing-sectioning h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <section class="amazing-sectioning">
+        <h2>Get In Touch Us</h2>
+        <p>Amazing us today to start planning your unforgettable Tanzanian experience.</p>
+
+        <div class="amazing-info">
+            <div class="rent-boxing">
+                <h4>📞 Phone</h4>
+                <p>+255 715 830 783</p>
+            </div>
+            <div class="rent-boxing">
+                <h4>📍 Location</h4>
+                <p>Arusha, Tanzania</p>
+            </div>
+            <div class="rent-boxing">
+                <h4>🕒 Office Hours</h4>
+                <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+
+        <div class="loss-containering">
+            <div id="form-step">
+                <form id="safariForm">
+                    <input type="text" id="u_name" placeholder="Your Name" required>
+                    <input type="email" id="u_email" placeholder="Your Email" required>
+                    <input type="text" id="u_phone" placeholder="Your phone number" required>
+
+                    <select id="u_package">
+                        <option value="" disabled selected>Select Tour Package</option>
+                        <option value="Serengeti Safari">Serengeti Safari</option>
+                        <option value="Ngorongoro Crater">Ngorongoro Crater</option>
+                        <option value="Tarangire Park">Tarangire Park</option>
+                    </select>
+
+                    <input type="date" id="u_date" required>
+                    <input type="number" id="u_people" value="1" min="1">
+                    <textarea id="u_message" placeholder="Your Message"></textarea>
+
+                    <button type="button" class="btns btns-green" onclick="sendMessage()">Send Message</button>
+                </form>
+            </div>
+
+            <div id="success-step" style="display:none; padding: 40px 0;">
+                <div style="font-size: 60px; color: #22c55e; margin-bottom: 20px;">✓</div>
+                <h2 style="color:#22c55e; margin-bottom: 10px;">Message Received!</h2>
+                <p style="color:white; margin-bottom: 30px;">Your safari request has been sent successfully. We will
+                    contact you shortly.</p>
+                <button class="btns btns-green" onclick="location.reload()"
+                    style="max-width: 200px; margin: 0 auto;">Back to Form</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function sendMessage() {
+            // 1. Get input values
+            const name = document.getElementById("u_name").value;
+            const email = document.getElementById("u_email").value;
+            const pkg = document.getElementById("u_package").value;
+
+            // 2. Simple Validation
+            if (name === "" || email === "" || pkg === "") {
+                alert("Please fill in the required fields (Name, Email, and Package)!");
+                return;
+            }
+
+            // 3. Send Email via EmailJS
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                from_name: name,
+                user_email: email,
+                phone: document.getElementById("u_phone").value,
+                package: pkg,
+                travel_date: document.getElementById("u_date").value,
+                people: document.getElementById("u_people").value,
+                message: document.getElementById("u_message").value
+            }).then(() => {
+                console.log("Email sent!");
+            }).catch((err) => {
+                console.error("Email failed:", err);
+            });
+
+            // 4. Immediately switch to Success Message
+            document.getElementById("form-step").style.display = "none";
+            document.getElementById("success-step").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

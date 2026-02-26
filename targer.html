@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .kili-table-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fdfaf3;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .kili-table-title {
+            color: #4a5d3a;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .route-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .route-table thead tr {
+            background-color: #4a5d3a;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .route-table th,
+        .route-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e0d8c8;
+        }
+
+        .route-table tbody tr:nth-child(even) {
+            background-color: #f4eee1;
+        }
+
+        .route-table tbody tr:hover {
+            background-color: #ede4d1;
+        }
+
+        /* Status Badges */
+        .badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .fitness-high {
+            background: #d15a2a;
+            color: white;
+        }
+
+        .fitness-mod {
+            background: #c69331;
+            color: white;
+        }
+
+        .traffic-low {
+            color: #2ecc71;
+        }
+
+        .traffic-med {
+            color: #f1c40f;
+        }
+
+        .traffic-high {
+            color: #e74c3c;
+        }
+
+        @media (max-width: 600px) {
+            .route-table {
+                font-size: 0.8rem;
+            }
+
+            .route-table th,
+            .route-table td {
+                padding: 10px 5px;
+            }
+        }
+    </style>
+
+    <div class="kili-table-container">
+        <h2 class="kili-table-title">Kilimanjaro Route Comparison</h2>
+        <table class="route-table">
+            <thead>
+                <tr>
+                    <th>Route Name</th>
+                    <th>Fitness</th>
+                    <th>Duration</th>
+                    <th>Traffic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Machame</strong></td>
+                    <td><span class="badge fitness-high">High</span></td>
+                    <td>6–7 Days</td>
+                    <td class="traffic-high">High</td>
+                </tr>
+                <tr>
+                    <td><strong>Marangu</strong></td>
+                    <td><span class="badge fitness-mod">Moderate</span></td>
+                    <td>5–6 Days</td>
+                    <td class="traffic-med">Moderate</td>
+                </tr>
+                <tr>
+                    <td><strong>Lemosho</strong></td>
+                    <td><span class="badge fitness-high">High</span></td>
+                    <td>7–8 Days</td>
+                    <td class="traffic-med">Moderate</td>
+                </tr>
+                <tr>
+                    <td><strong>Rongai</strong></td>
+                    <td><span class="badge fitness-mod">Moderate</span></td>
+                    <td>6–7 Days</td>
+                    <td class="traffic-low">Low</td>
+                </tr>
+                <tr>
+                    <td><strong>Northern Circuit</strong></td>
+                    <td><span class="badge fitness-high">High</span></td>
+                    <td>9 Days</td>
+                    <td class="traffic-low">Very Low</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
