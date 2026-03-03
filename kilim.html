@@ -632,6 +632,40 @@
             text-align: left;
         }
 
+        .footer-container ul li a {
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            transition: 0.3s ease;
+        }
+
+        .footer-container ul li a:hover {
+            color: #f4c542;
+            animation: shake 0.4s ease-in-out;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-3px);
+            }
+
+            50% {
+                transform: translateX(3px);
+            }
+
+            75% {
+                transform: translateX(-3px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
         .route-table th,
         .route-table td {
             padding: 15px 20px;
@@ -682,378 +716,61 @@
                 font-size: 0.8rem;
             }
         }
+
+         .navbar .nav-link {
+            position: relative;
+            font-weight: 600;
+            font-size: 17px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f3f5f3 !important;
+
+        }
+
+        .navbar .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 2px;
+            background: #406445;
+            transition: width 0.3s ease;
+        }
+
+        .navbar .nav-link:hover::after {
+            width: 100%;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-3px);
+            }
+
+            50% {
+                transform: translateX(3px);
+            }
+
+            75% {
+                transform: translateX(-3px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .navbar .nav-link:hover {
+            animation: shake 0.3s ease-in-out;
+        }
     </style>
 </head>
 
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-<script>
-    function toggleMenu() {
-        document.querySelector(".navbar ul").classList.toggle("show");
-    }
-</script>
-
-<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-<style>
-    .scrolled {
-        background-color: white !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: background 0.4s ease, box-shadow 0.4s ease;
-    }
-</style>
-
-<body>
-
-    <div class="contact-info-container" style="position: fixed;
-  top: 0;
-  width: 100%;z-index: 1000;">
-        <div class="contact-item">📞 +255624689318</div>
-        <div class="contact-item">|</div>
-        <div class="contact-item">📧 info@Hollgrivens.com</div>
-        <div class="contact-item">|</div>
-        <div class="contact-item">📍 Arusha, Tanzania .</div>
-    </div>
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm p-3 font-size:25px" style="position: fixed;
-  width: 100%;z-index: 99999; margin-top:50px">
-        <div class="container-fluid">
-
-            <div class="logo-lrf">
-                <img src="HOLL.png" alt="your tour logo">
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#destination-home">Destinations</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#accomodation-home">Accomodation</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#activity-sm">Activities</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#review-home">Reviews</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery-home">Gallery</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="cont.html">Contact</a>
-                    </li>
-
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <h1>MOUNT KILIMANJARO</h1>
-
-
-    </header>
-    <div class="divider"></div>
-
-    <div class="detail-layout">
-        <article class="description">
-            <h2>About Kilimanjaro</h2>
-            <p>
-                Mount Kilimanjaro, located in Tanzania, is the highest peak in Africa and the tallest free-standing
-                mountain
-                in the world, rising to 5,895 meters. This dormant volcano consists of three distinct cones: Shira,
-                Mawenzi,
-                and Kibo. Kibo is the highest point, famously crowned by a shimmering, though rapidly receding, glacial
-                ice
-                cap.</p>
-
-            <p>The trek to the summit is a journey through five diverse ecological zones, ranging from lush tropical
-                rainforests at the base to an arctic desert at the peak. Along the way, climbers encounter unique flora,
-                such as the prehistoric-looking giant groundsels, and experience dramatic temperature shifts that
-                require
-                specialized cold-weather gear</p>
-
-            <p>While reaching the Uhuru Peak summit does not require technical climbing skills, the extreme altitude
-                remains
-                a significant challenge for all trekkers. Successful climbers follow the "pole pole" philosophy, which
-                means
-                "slowly, slowly" in Swahili. This steady pace allows the body to acclimate properly to the thin air and
-                decreasing oxygen levels.</p>
-
-            <div class="slideshow-container">
-                <img id="slide" src="istockphoto-966223418-612x612.jpg" alt="Slideshow Image" class="fade-in">
-
-                <button class="prev" onclick="prev()">&#10094;</button>
-                <button class="next" onclick="next()">&#10095;</button>
-
-            </div>
-
-            <h2>EVERYONE CAN CLIMB AFRICA'S HIGHEST MOUNTAIN!</h2>
-
-            <p>
-                While it is true that almost anyone with a decent level of fitness can attempt to climb Mount
-                Kilimanjaro, it remains a serious physical undertaking. Unlike many of the world's highest peaks,
-                Kilimanjaro is a "trekking mountain," meaning no technical mountaineering skills, ropes, or harnesses
-                are required to reach the summit.
-            </p>
-
-            <p>
-                The primary challenge for most climbers is not the steepness of the terrain, but rather the extreme
-                altitude. As you ascend through five different climate zones, the oxygen levels drop significantly. This
-                requires a "pole pole" or "slowly, slowly" approach to give your body the necessary time to acclimate
-                properly.
-            </p>
-
-            <p>With the support of professional guides and porters who carry gear and prepare nutritious meals, trekkers
-                can focus entirely on their pace. Choosing a longer route, such as seven or eight days, drastically
-                increases the success rate, making the "Roof of Africa" an achievable dream for dedicated hikers
-                worldwide.</p>
-
-
-
-
-
-
-            <h1>Excursions and activities in Ngorongoro Conservation Area</h1>
-
-            <ul>
-                <a href="Mountainbike.html">
-                    <li>Mountainbike tour Lake Manyara</li>
-                </a>
-                <a href="">
-                    <li>Visit Maasai village</li>
-                </a>
-                <a href="">
-                    <li>Visit Hadzabe tribe</li>
-                </a>
-                <a href="">
-                    <li>Cultural tour Mto wa Mbu</li>
-                </a>
-            </ul>
-
-
-
-
-
-
-        </article>
-
-
-
-        <aside class="price-sidebar">
-            <h3>Information and facts</h3>
-
-
-
-            <P>
-                Mount Kilimanjaro is the highest free-standing mountain in the world (5,895 metres, 19, 341 ft).
-                Climbing Kilimanjaro is an unforgettable adventure. Of which people say: “You should do that ones in
-                your life!”
-            </P>
-
-            <h2>Facts about Kilimanjaro</h2>
-            <P>Climbing Kilimanjaro is a spectacular hike through five climate zones, from the tropics to the Arctic.
-                The zones are:</P>
-
-
-            <li>
-                Tropical rainforest (800-3000 m)</li>
-            <li>Grassland and savannah (3000-4200 m)
-            </li>
-            <li>Glacial zone with snow and ice cap summit (5000+ m) </li>
-
-            </ul>
-
-
-
-    </div>
-    </aside>
-    </div>
-
-    <div class="kili-table-container">
-        <h2 class="kili-table-title">Kilimanjaro Route Comparison</h2>
-        <table class="route-table">
-            <thead>
-                <tr>
-                    <th>Route Name</th>
-                    <th>Fitness</th>
-                    <th>Duration</th>
-                    <th>Traffic</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Machame</strong></td>
-                    <td><span class="badge fitness-high">High</span></td>
-                    <td>6–7 Days</td>
-                    <td class="traffic-high">High</td>
-                </tr>
-                <tr>
-                    <td><strong>Marangu</strong></td>
-                    <td><span class="badge fitness-mod">Moderate</span></td>
-                    <td>5–6 Days</td>
-                    <td class="traffic-med">Moderate</td>
-                </tr>
-                <tr>
-                    <td><strong>Lemosho</strong></td>
-                    <td><span class="badge fitness-high">High</span></td>
-                    <td>7–8 Days</td>
-                    <td class="traffic-med">Moderate</td>
-                </tr>
-                <tr>
-                    <td><strong>Rongai</strong></td>
-                    <td><span class="badge fitness-mod">Moderate</span></td>
-                    <td>6–7 Days</td>
-                    <td class="traffic-low">Low</td>
-                </tr>
-                <tr>
-                    <td><strong>Northern Circuit</strong></td>
-                    <td><span class="badge fitness-high">High</span></td>
-                    <td>9 Days</td>
-                    <td class="traffic-low">Very Low</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-
-
-
-
-    <footer>
-        <div class="footer-container" id="foot">
-
-            <div class="footer-col logo-col">
-                <div class="footer-logo">HOLLI TOUR</div>
-                <p class="tagline">Your personalized path to the African wilderness.</p>
-                <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania</p>
-                <p class="contact-item"><i class="fas fa-envelope"></i> info@holltour.com</p>
-                <p class="contact-item"><i class="fas fa-phone-alt"></i> +255 777 123 456</p>
-            </div>
-
-            <div class="footer-col quick-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="co.html">Home</a></li>
-                    <li><a href="#destination-home">Destinations</a></li>
-                    <li><a href="#activity-sm">Activities</a></li>
-                    <li><a href="#review-home">Reviews</a></li>
-                    <li><a href="#gallery-home">Gallery</a></li>
-                    <li><a href="for..html">Contact</a>
-                </ul>
-            </div>
-
-            <div class="footer-tours">
-                <h4>Tours</h4>
-                <ul>
-                    <li><a href="">Serengeti National Park</a></li>
-                    <li><a href="">tarangile National Park</a></li>
-                    <li><a href="">Zanzibari (unguja & Pemba)</a></li>
-                    <li><a href="">Lake Manyara National Park</a></li>
-                    <li><a href="">Mafia Island</a></li>
-                    <li><a href="">Salous Game Reserve</a></li>
-                </ul>
-            </div> <br>
-
-            <div class="footer-col social-col">
-                <h4>Connect With Us</h4>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
-
-                <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            &copy; 2025 Holli Tour. All rights reserved.
-        </div>
-
-        <script>
-            let images = [
-                "istockphoto-1207035074-612x612.jpg",
-                "istockphoto-1610968602-612x612.jpg",
-                "istockphoto-488053978-612x612.jpg",
-                "M.jpg"
-
-            ];
-
-            let index = 0;
-            let autoPlayInterval;
-
-            function startAutoPlay() {
-                clearInterval(autoPlayInterval);
-                autoPlayInterval = setInterval(next, 5000);
-            }
-
-            function next() {
-                index++;
-                if (index >= images.length) {
-                    index = 0;
-                }
-                document.getElementById("slide").src = images[index];
-                startAutoPlay();
-            }
-
-            function prev() {
-                index--;
-                if (index < 0) {
-                    index = images.length - 1;
-                }
-                document.getElementById("slide").src = images[index];
-            }
-            window.onload = startAutoPlay;
-
-        </script>
-
-        <script>
-            const navbar = document.querySelector("nav");
-
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add("scrolled");
-                } else {
-                    navbar.classList.remove("scrolled");
-                }
-            });
-        </script>
-
-
-</body>
-
-</html>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="ano
